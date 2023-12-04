@@ -9,7 +9,7 @@ KEYMAPOPTS="ch ch-de_nodeadkeys"
 HOSTNAMEOPTS=alpine
 
 # Set device manager to mdev
-DEVDOPTS=mdev
+#DEVDOPTS=mdev
 
 # Contents of /etc/network/interfaces
 INTERFACESOPTS="auto lo
@@ -30,8 +30,8 @@ TIMEZONEOPTS="Europe/Zurich"
 #PROXYOPTS="http://webproxy:8080"
 PROXYOPTS=none
 
-# Add best mirror (CDN)
-APKREPOSOPTS="-f"
+# Add first mirror (CDN)
+APKREPOSOPTS="-1"
 
 # Create admin user
 #USEROPTS="-a -u -g audio,video,netdev juser"
@@ -45,7 +45,8 @@ SSHDOPTS=openssh
 
 # Use openntpd
 # NTPOPTS="openntpd"
-NTPOPTS=none
+# NTPOPTS=none
+NTPOPTS="-c chrony"
 
 # Use /dev/sda as a sys disk
 DISKOPTS="-m sys /dev/sda"
