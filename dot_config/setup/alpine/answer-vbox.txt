@@ -3,7 +3,7 @@
 
 # Use US layout with US variant
 # KEYMAPOPTS="us us"
-KEYMAPOPTS="ch ch_de-nodeadkeys"
+KEYMAPOPTS="ch ch-de_nodeadkeys"
 
 # Set hostname to 'alpine'
 HOSTNAMEOPTS=alpine
