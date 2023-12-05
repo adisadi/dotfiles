@@ -39,7 +39,7 @@ APKREPOSOPTS="-1"
 #USERSSHKEY="https://example.com/juser.keys"
 
 # Install Openssh
-SSHDOPTS=none
+SSHDOPTS="-c openssh"
 #ROOTSSHKEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOIiHcbg/7ytfLFHUNLRgEAubFz/13SwXBOM/05GNZe4 juser@example.com"
 #ROOTSSHKEY="https://example.com/juser.keys"
 
