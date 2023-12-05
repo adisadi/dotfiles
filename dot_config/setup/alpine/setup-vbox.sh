@@ -21,13 +21,15 @@ rc-service virtualbox-drm-client start
 rc-update add virtualbox-drm-client default
 
 # install xorg & i3wm --> https://wiki.alpinelinux.org/wiki/I3wm
+apk add xf86-video-vboxvideo xf86-video-fbdev xf86-video-vesa
+
 apk add dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 rc-update add dbus
 
 setup-xorg-base
 
-apk add i3wm i3status kitty dmenu picom dmenu ranger ttf-font-awesome
+apk add i3wm i3status kitty dmenu feh picom dmenu ranger ttf-font-awesome font-dejavu curl nano 
 
 #setup chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply adisadi
