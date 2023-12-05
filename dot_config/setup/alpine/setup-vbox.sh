@@ -31,8 +31,12 @@ setup-xorg-base
 
 apk add i3wm i3status kitty dmenu feh picom dmenu ranger ttf-font-awesome font-dejavu curl nano 
 
+#setup x11 keyboard
+apk add setxkbmap
+
 #setup chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply adisadi
+
 
 
 
